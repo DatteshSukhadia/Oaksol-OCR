@@ -1,4 +1,4 @@
-# Oaksol-OCR
+# Optical Character Recognition System
 # OCR Data Extraction & MySQL Integration
 
 This project extracts text from **patient assessment forms** using **OCR (Tesseract + EasyOCR)** and stores the structured data in **MySQL**.
