@@ -1,4 +1,4 @@
-import pymysql  # ✅ Replacing mysql.connector with pymysql
+import pymysql  #Replacing mysql.connector with pymysql
 import json
 import cv2
 import pytesseract
@@ -108,10 +108,10 @@ def insert_into_db(data):
         conn.commit()
         cursor.close()
         conn.close()
-        print("✅ Data successfully stored in MySQL!")
+        print(" Data successfully stored in MySQL!")
 
     except pymysql.MySQLError as err:
-        print(f"❌ MySQL Error: {err}")
+        print(f" MySQL Error: {err}")
 
 if __name__ == "__main__":
     # Set image path (update as needed)
@@ -131,4 +131,4 @@ if __name__ == "__main__":
         insert_into_db(structured_data)
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
